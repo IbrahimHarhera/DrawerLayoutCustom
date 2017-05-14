@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:weightSum="7"
+    android:background="#c6c6"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:onClick="openMenu"
+        android:focusable="false"
+        android:clickable="true"
+        android:src="@drawable/ic_menu" />
+
+    <TextView
+        android:id="@+id/tv_action_bar_title"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="5"
+        android:text="خيارات"
+        android:layout_marginLeft="40dp"
+        android:textSize="25sp"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:onClick="openMenu"
+        android:focusable="false"
+        android:clickable="true"
+        android:visibility="gone"
+        android:src="@drawable/ic_menu" />
+
+
+
+</LinearLayout>
