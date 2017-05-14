@@ -2,12 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/list_item_style"
+    android:background="#85000000"
     android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/layout_item"
-        android:background="#95000000"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -25,10 +25,15 @@
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
+            android:textColor="#fff"
             android:layout_marginLeft="20dp"
             android:layout_weight="2"
             android:gravity="left|center"
             android:text="Home"
             android:textSize="18sp" />
     </LinearLayout>
+    <View
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
 </LinearLayout>

@@ -12,10 +12,13 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.readystatesoftware.viewbadger.BadgeView;
 
 import org.w3c.dom.Text;
 
@@ -33,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     private ActionBarDrawerToggle actionBarDrawerToggle;
     private boolean isMenuOpened=false;
     TextView tvContent;
+    ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -126,6 +130,12 @@ public class MainActivity extends AppCompatActivity {
         replaceFragment(0);
 
 
+        imageView=(ImageView)findViewById(R.id.badge);
+        BadgeView badgeView = new BadgeView(MainActivity.this, imageView);
+        badgeView.setText("+2");
+        badgeView.setBadgePosition(BadgeView.POSITION_CENTER);
+        badgeView.toggle(true);
+        badgeView.setBadgeBackgroundColor(R.color.colorPrimary);
     }
 
     private void replaceFragment(int i) {
